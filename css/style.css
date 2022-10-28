@@ -1,0 +1,195 @@
+:root {
+    --color-black-green: #040b15;
+    --color-hover: #1e1e1e;
+    --color-text-1: #b2b2b2;
+    --color-primary: #0080ff;
+    --color-background: #aab7b8;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-black-green);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.logo {
+    background-image: url("../images/avt.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.logo .title {
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+    width: 100%;
+    font-size: 2em;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+.logo .description {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(0, 26, 255), 0 0 1em black, 0 0 0.2em black;
+}
+/* ------- header -------- */
+
+.btn-close,
+.btn-open {
+    top: 320px;
+    right: 15px;
+    color: white;
+    font-size: 2em;
+    position: absolute;
+}
+.btn-open {
+    display: none;
+}
+.action-toggle {
+    display: none;
+}
+/*--- nav bar ---*/
+nav {
+    padding: 20px;
+}
+
+nav li {
+    color: white;
+    list-style: none;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+nav li:hover {
+    background-color: var(--color-hover);
+    border-radius: 10px;
+}
+nav li a {
+    display: inline-block;
+    width: 100%;
+}
+/* ------ css main  ------ */
+main {
+    padding: 10px;
+}
+main > div {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+main > div > div {
+    padding: 10px;
+}
+main > div > .title {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 2px red, 0 0 0.3em blue, 0 0 0.1em blue;
+}
+
+/*--- about ---*/
+#about {
+    background-image: url("../images/background-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+}
+#about div {
+    font-weight: 500;
+    overflow-wrap: break-word;
+}
+#about div a {
+    color: var(--color-primary);
+}
+
+/*--- objective ---*/
+#objective {
+    background-image: url("../images/background-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    height: 300px;
+}
+
+/*--- skill ---*/
+#skill {
+    color: white;
+    font-weight: 500;
+}
+
+/*--- experience ---*/
+.card {
+    margin: 5px 0;
+    border-bottom: 2px solid white;
+}
+.card .title {
+    color: white;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 10px;
+}
+.card .content {
+    padding: 10px;
+    text-align: justify;
+    width: 100%;
+}
+.card .content li {
+    padding: 5px 0;
+    font-style: italic;
+    list-style-position: inside;
+}
+.card .content li::marker {
+    margin: 0 !important;
+}
+.card .sub-title {
+    color: black;
+    border-radius: 3px;
+    background-color: var(--color-text-1);
+    padding: 2px;
+}
+.line-border {
+    position: relative;
+    margin: 0 10px 15px;
+    background-color: white;
+    height: 15px;
+    padding: 0;
+}
+.border-fill {
+    height: 15px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: var(--color-primary);
+    position: relative;
+}
+#experience,
+#education,
+#certifications,
+#activities,
+#more-info {
+    height: fit-content;
+    width: 100%;
+    background-color: var(--color-hover);
+    color: var(--color-text-1);
+}
