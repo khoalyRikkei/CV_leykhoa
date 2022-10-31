@@ -13,6 +13,12 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/tablet.css" />
+        <link rel="stylesheet" href="./css/desktop.css" />
     </head>
     <body>
         <header>
@@ -52,35 +58,36 @@
                             <li>
                                 <a href="#more-info"
                                     ><i class="fa-solid fa-circle-info"></i>
-                                    Additional information</a
+                                    More</a
                                 >
                             </li>
                         </ul>
                     </li>
-
                     <li>
                         <a href="#skill"
                             ><i class="fa-solid fa-sliders"></i> Skills</a
                         >
-                        <ul>
-                            <li>
-                                <a href="#certifications"
-                                    ><i class="fa-solid fa-medal"></i>
-                                    Certifications</a
-                                >
-                            </li>
-                        </ul>
                     </li>
                     <li>
-                        <a href="#experience"
-                            ><i class="fa-solid fa-briefcase"></i> Work
-                            experience</a
-                        >
+                        <i class="fa-solid fa-star-of-david"></i>
+                        Experience
                         <ul>
+                            <li>
+                                <a href="#experience"
+                                    ><i class="fa-solid fa-briefcase"></i>
+                                    Work</a
+                                >
+                            </li>
                             <li>
                                 <a href="#project"
                                     ><i class="fa-solid fa-diagram-project"></i>
                                     Project partication</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#certifications"
+                                    ><i class="fa-solid fa-medal"></i>
+                                    Certifications</a
                                 >
                             </li>
                         </ul>
@@ -97,8 +104,11 @@
         </header>
         <main>
             <div id="about">
+                <div class="logo-2"></div>
                 <div class="title">About me</div>
-                <div><i class="fa-solid fa-circle-user"></i> LÊ Y KHOA</div>
+                <div style="font-weight: 600">
+                    <i class="fa-solid fa-circle-user"></i> LÊ Y KHOA
+                </div>
                 <div><i class="fa-solid fa-venus-mars"></i> Male</div>
                 <div><i class="fa-regular fa-calendar"></i> 10/11/1995</div>
                 <div>
@@ -323,8 +333,8 @@
             </div>
             <div id="certifications">
                 <div class="title">Certifications</div>
-                <div>
-                    <ul>
+                <div class="card">
+                    <ul class="content">
                         <li>Building your first webside (HTML/CSS)</li>
                         <li>Creating your first</li>
                         <li>Front End web programming with React</li>

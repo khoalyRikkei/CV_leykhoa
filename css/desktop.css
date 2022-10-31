@@ -1,6 +1,55 @@
-ul.navbar-toggle {
-    display: flex;
-}
-ul.navbar-toggle li i {
-    display: none;
+@media screen and (min-width: 992px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #about {
+        min-width: 100%;
+        height: 100%;
+    }
+    #about,
+    #objective {
+        height: auto;
+        width: 49%;
+        margin-right: 2%;
+    }
+    #skill {
+        height: auto;
+        width: 49%;
+    }
+    #experience,
+    #project,
+    #education {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #experience .title,
+    #project .title,
+    #education .title {
+        width: 100%;
+    }
+    .card {
+        width: 50%;
+    }
+    #activities,
+    #more-info {
+        width: 49%;
+        height: auto;
+    }
+    #activities {
+        margin-right: 2%;
+    }
+    #activities .card,
+    #more-info .card {
+        width: 100%;
+    }
+    .img-certification {
+        background-image: url("../images/chung-chi.jpg");
+        background-size: contain;
+        height: 100px;
+        width: 30%;
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
 }

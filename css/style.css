@@ -1,27 +1,30 @@
-@import url("./tablet.css") screen and (min-width: 768px);
-@import url("./desktop.css") screen and (min-width: 992px);
-
 :root {
-    --color-black-green: #040b15;
-    --color-hover: #1e1e1e;
+    --color-background-1: #f0f2f5;
+    --color-hover: #e4e6e9;
     --color-text-1: #b2b2b2;
     --color-primary: #0080ff;
-    --color-background: #aab7b8;
+    --color-background-2: #8faaac;
+}
+[class*="fa-"] {
+    color: var(--color-primary);
 }
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: #050505;
 }
 
 html {
     scroll-behavior: smooth;
+    font-size: 14px;
+    min-width: 250px;
 }
 
 body {
-    background-color: var(--color-black-green);
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    background-color: var(--color-background-1);
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
 }
 a {
     text-decoration: none;
@@ -60,7 +63,7 @@ a {
 
 .btn-close,
 .btn-open {
-    top: 320px;
+    top: 325px;
     right: 15px;
     color: white;
     font-size: 2em;
@@ -75,18 +78,26 @@ a {
 }
 /*--- nav bar ---*/
 nav {
-    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: 0.2px solid rgba(128, 128, 128, 0.2);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.63);
+    padding: 30px 10px 10px;
 }
 
 nav li {
-    color: white;
     list-style: none;
     padding: 10px;
     font-size: 1.1em;
-    font-weight: 500;
+    font-weight: 600;
 }
 nav li:hover {
     background-color: var(--color-hover);
+    border-radius: 10px;
+}
+nav li ul li:hover {
+    background-color: white;
     border-radius: 10px;
 }
 nav li a {
@@ -104,19 +115,37 @@ nav ul li:hover ul {
 main {
     padding: 10px;
 }
-main > div {
+main > div:nth-child(odd) {
+    background-image: url("../images/background-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
+    border-radius: 10px;
+    border: 0.2px solid rgba(128, 128, 128, 0.2);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.63);
 }
+main > div:nth-child(even) {
+    background-image: url("../images/background-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 0.2px solid rgba(128, 128, 128, 0.2);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.63);
+}
+
 main > div > div {
     padding: 10px;
 }
 main > div > .title {
-    font-size: 1.3em;
-    font-weight: 600;
-    color: white;
-    text-shadow: 1px 1px 2px red, 0 0 0.3em blue, 0 0 0.1em blue;
+    font-size: 1.4em;
+    font-weight: 900 !important;
+    color: black;
+    text-shadow: 0 0 white, 0 0 0.3em white, 0 0 8px white;
 }
 
 /*--- about ---*/
@@ -152,18 +181,22 @@ main > div > .title {
 /*--- experience ---*/
 .card {
     margin: 5px 0;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid chocolate;
 }
 .card a {
     color: var(--color-primary);
-    padding: 0 5px;
+    padding: 1px 0;
+    margin: 0 5px;
     font-weight: 600;
+    border-bottom: 1px solid var(--color-primary);
 }
 .card .title {
+    font-size: 1.1em;
     color: white;
     font-weight: 500;
     position: relative;
     margin-bottom: 10px;
+    text-shadow: 0 0 black, 0 0 0.2em black, 0 0 5px black;
 }
 .card .content {
     padding: 10px;
@@ -207,20 +240,19 @@ main > div > .title {
 #more-info {
     height: fit-content;
     width: 100%;
-    background-color: var(--color-hover);
-    color: var(--color-text-1);
 }
 
 footer {
     position: relative;
     padding: 30px;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.5em;
     color: var(--color-text-1);
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px;
 }
 .btn-click-top {
-    color: white;
-    background-color: var(--color-primary);
     position: fixed;
     padding: 5px;
     border-radius: 2px;
@@ -228,3 +260,5 @@ footer {
     bottom: 5px;
     display: none;
 }
+
+@import url("./desktop.css") screen and (min-width: 992px);

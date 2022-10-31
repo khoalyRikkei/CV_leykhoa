@@ -1,0 +1,54 @@
+@media screen and (min-width: 768px) {
+    .btn-close,
+    .btn-open {
+        display: none !important;
+    }
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    nav {
+        padding: 10px;
+        top: 0;
+        margin: 0;
+        border-radius: 0;
+        width: 100%;
+        border: none;
+        z-index: 1000;
+        max-height: 60px;
+    }
+    .logo {
+        display: none;
+    }
+
+    ul.navbar-toggle {
+        display: flex;
+    }
+    ul.navbar-toggle li {
+        flex: 1;
+        text-align: center;
+    }
+    ul.navbar-toggle li ul {
+        flex: 1;
+        text-align: center;
+        padding: 5px;
+    }
+    ul.navbar-toggle li i {
+        display: none;
+    }
+    #about {
+        position: relative;
+    }
+    .logo-2 {
+        background-image: url("../images/avt.jpg");
+        background-size: cover;
+        background-position: center;
+        margin: 10px;
+        border-radius: 10px;
+        position: absolute;
+        right: 20px;
+        height: 280px;
+        width: 250px;
+    }
+}
