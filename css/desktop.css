@@ -1,0 +1,6 @@
+ul.navbar-toggle {
+    display: flex;
+}
+ul.navbar-toggle li i {
+    display: none;
+}

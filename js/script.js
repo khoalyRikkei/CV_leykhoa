@@ -12,3 +12,12 @@ function handleToggle() {
         btnClose.style.display = "none";
     }
 }
+
+document.addEventListener("scroll", () => {
+    let top = document.querySelector(".btn-click-top");
+    if (window.scrollY > 400) {
+        top.style.display = "block";
+    } else {
+        top.style.display = "none";
+    }
+});
